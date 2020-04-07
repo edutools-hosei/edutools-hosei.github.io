@@ -1,0 +1,65 @@
+header>div {
+    background-image: linear-gradient(to left, #ebe9e5 0%, #faf9f8 100%);
+}
+
+main a:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin: 0 3px;
+}
+
+main a[href^="http://"]:before, a[href^="https://"]:before {
+    content: "\f35d";
+    color: #03c;
+}
+
+main a[href*="hosei.ac.jp"]:before, a[href*="hosei-kyoiku.jp"]:before {
+    content: '';
+    margin: 0;
+}
+
+main a:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin: 0 3px;
+}
+
+main a[href$=".pdf"]:after {
+    content: "\f1c1";
+    color: #ff0505;
+}
+
+main h1 {
+    color: #012169;
+    border-bottom: 1px solid #FF710A;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+main h2 {
+    color: #012169;
+    padding-left: 10px;
+    border-left: 4px solid #FF710A;
+    border-bottom: 1px solid #FF710A;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+main h3 {
+    color: #012169;
+    padding-left: 10px;
+    border-left: 4px solid #FF710A;
+    margin-top: 1em;
+}
+
+main h4 {
+    color: #012169;
+}
+
+main hr {
+    margin-top: 3em;
+}
+
+footer>div {
+    background-image: linear-gradient(to left, #ebe9e5 0%, #faf9f8 100%);
+}
