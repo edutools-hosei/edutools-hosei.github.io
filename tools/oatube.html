@@ -186,20 +186,76 @@
         </ul>
         <h2 id="よくある質問">よくある質問</h2>
         <h3 id="利用できるファイル形式サイズについて">利用できるファイル形式・サイズについて</h3>
+        <p>OATubeに登録できるビデオのファイル形式は以下の通りです。</p>
         <ul>
-          <li>OATubeに登録できるビデオのファイル形式は以下の通りです
-            <ul>
-              <li>mp4</li>
-              <li>mpg, mpeg</li>
-              <li>wmv</li>
-              <li>mov</li>
-              <li>m2ts</li>
-              <li>avi</li>
-              <li>3gp, 3g2</li>
-            </ul>
-          </li>
-          <li>ファイルあたりのサイズの上限は500MBです</li>
+          <li>mp4</li>
+          <li>mpg, mpeg</li>
+          <li>wmv</li>
+          <li>mov</li>
+          <li>m2ts</li>
+          <li>avi</li>
+          <li>3gp, 3g2</li>
         </ul>
+        <p>ファイルあたりのサイズの上限は500MBです。なお，音声のみのファイル（.mp3 等）については対応していません。</p>
+        <h3 id="アップロードした動画が閲覧できない">アップロードした動画が閲覧できない</h3>
+        <p>動画はサーバに登録（アップロード）されると，配信のための変換処理（エンコード）が行われます。エンコード処理中はサムネイルの代わりに “VIDEO UPLOADING” と表示されます。
+          少し時間をおいてから確認してください。なお，変換処理にかかる時間は，動画のファイルサイズや同時処理の数などにより所要時間は変わります。</p>
+        <h3 id="動画の公開範囲">動画の公開範囲</h3>
+        <p>動画の公開範囲によって閲覧できる対象者は次の表のようになっています。</p>
+        <table>
+          <thead>
+            <tr>
+              <th> </th>
+              <th>公開</th>
+              <th>学内のみ公開</th>
+              <th>クラス（過年度を含む）</th>
+              <th>クラス（本年度のみ）</th>
+              <th>非公開</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>動画をアップロードした本人</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>O</td>
+            </tr>
+            <tr>
+              <td>本年度のクラスに所属するユーザ</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>O</td>
+              <td>O</td>
+            </tr>
+            <tr>
+              <td>別年度で同じ授業コードのクラスに属するユーザ</td>
+              <td>X</td>
+              <td>X</td>
+              <td>O</td>
+              <td>O</td>
+              <td>O</td>
+            </tr>
+            <tr>
+              <td>OATubeのアカウントを持つユーザ</td>
+              <td>X</td>
+              <td>O</td>
+              <td>O</td>
+              <td>O</td>
+              <td>O</td>
+            </tr>
+            <tr>
+              <td>OATubeのアカウントを持たないユーザ</td>
+              <td>O</td>
+              <td>O</td>
+              <td>O</td>
+              <td>O</td>
+              <td>O</td>
+            </tr>
+          </tbody>
+        </table>
         <h2 id="お問い合わせ">お問い合わせ</h2>
         <p><a href="https://forms.gle/cidfzWDfxLNmdeWG8">問い合わせフォーム</a>よりお問い合わせください。</p>
         <p>なお，OATubeは情報メディア教育研究センターの研究プロジェクトの一環であり，教員が運用しています。お含み置きくださいますようお願いいたします。</p>
@@ -234,6 +290,7 @@
       <script>
         $(function () {
             $("main img").addClass("img-fluid");
+            $("main table").addClass("table table-bordered");
         });
       </script>
     </body>
