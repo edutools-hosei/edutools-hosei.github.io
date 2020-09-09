@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="canonical" href="https://edutools-hosei.github.io/tools/oatube_classic.html" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="https://kit.fontawesome.com/9005b9eab5.js" crossorigin="anonymous"></script>
+    <title>OATube | 教育支援ツールガイド@法政大学</title>
+  </head>
+  <body class="d-flex flex-column" style="min-height: 100vh;">
+    <header>
+      <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom">
+        <a class="navbar-brand" href="/">
+          <img
+                    src="data:image/webp;base64,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" />
+          </a>
+          <h5 class="my-0 ml-2 mr-md-auto font-weight-normal">教育支援ツールガイド@法政大学</h5>
+        </div>
+      </header>
+      <main class="container mb-auto">
+        <h1 class="mb-0">OATube</h1>
+        <div class="mt-0 mb-4 text-right">最終更新：2020-04-15</div>
+        <p><a href="https://oatube.media.hosei.ac.jp/">OATube（オーエーチューブ）</a>は，動画を用いた学習を支援するシステムです。あらかじめ撮影した映像をアップロードし，配信することができます。</p>
+        <h2 id="oatubeでできること">OATubeでできること</h2>
+        <p>OATubeアカウントでログインをすると，以下の操作が行えます。</p>
+        <ul>
+          <li>動画ファイルをアップロードできます</li>
+          <li>専用スマートフォンアプリに限り，その場でカメラを起動して撮影した動画もアップロードできます</li>
+          <li>動画を公開できます
+            <ul>
+              <li>公開範囲を設定できます</li>
+              <li>公開期間（配信開始・配信終了）を設定できます</li>
+            </ul>
+          </li>
+          <li>動画を閲覧できます
+            <ul>
+              <li>ブラウザで再生できます</li>
+              <li>専用スマートフォンアプリで再生できます</li>
+            </ul>
+          </li>
+          <li>動画にコメントを追加できます</li>
+        </ul>
+        <p>OATubeには動画を撮影・編集する機能はないため，別のシステムやアプリケーションを利用し，あらかじめ動画を作成する必要があります。また，Web会議システムのようなライブ配信には対応していません。</p>
+        <h2 id="利用の流れ">利用の流れ</h2>
+        <h3 id="アカウント申請">アカウント申請</h3>
+        <p>OATubeは，情報メディア教育研究センターが研究プロジェクトの一環として運用しています。
+          このため，全学ネットワークシステムのアカウントとは別の <strong>OATubeアカウント</strong> が必要となります。</p>
+        <ol>
+          <li>アカウント申請
+            <ul>
+              <li><a href="https://forms.gle/LeJDpKC6eBPatMt1A">申請フォーム</a>よりお申し込みください（利用申請ができるのは <strong>本学のメールアドレスを所有する教員のみ</strong> です）</li>
+            </ul>
+          </li>
+          <li>パスワードの設定
+            <ul>
+              <li>設定方法はアカウント通知のメールに記載されています</li>
+            </ul>
+          </li>
+        </ol>
+        <h3 id="ログイン">ログイン</h3>
+        <ol>
+          <li><a href="https://oatube.media.hosei.ac.jp/">OATube</a> ログイン画面よりログインします
+            <ul>
+              <li>教員（教師）ユーザの場合，教師権限・学生権限のどちらでログインするかを選択します</li>
+            </ul>
+          </li>
+        </ol>
+        <h2 id="使い方">使い方</h2>
+        <p>スマートフォン・タブレット等でも操作できますが，ここではパソコンでの利用を想定して説明します。</p>
+        <h3 id="画面概要">画面概要</h3>
+        <p>動画はクラスまたはグループに紐付いて管理されます。</p>
+        <h4 id="新着動画">新着動画</h4>
+        <p><img src="/images/oatube_classic_home.jpg" alt="新着動画画面" title="新着動画画面" /></p>
+        <ul>
+          <li>ログイン直後には新着動画画面が表示されます</li>
+          <li>画面の上部はクラス毎の動画，下部には視聴履歴が表示されます
+            <ul>
+              <li>動画がアップロードされていない場合は表示されません</li>
+            </ul>
+          </li>
+        </ul>
+        <h4 id="クラス動画">クラス動画</h4>
+        <p><img src="/images/oatube_classic_videos_related.jpg" alt="クラス動画画面" title="クラス動画画面" /></p>
+        <ul>
+          <li>OATube内で閲覧できる全ての動画が表示されます
+            <ul>
+              <li>動画は更新日時降順で表示されます</li>
+              <li>動画自体の公開設定により視聴できない（表示されない）動画もあります</li>
+            </ul>
+          </li>
+          <li>画面右上でクラス・グループ等での絞り込みができます</li>
+        </ul>
+        <h4 id="マイ動画">マイ動画</h4>
+        <p><img src="/images/oatube_classic_videos_list.jpg" alt="マイ動画画面" title="マイ動画画面" /></p>
+        <ul>
+          <li>自分自身がOATubeにアップロードした動画が表示されます</li>
+        </ul>
+        <h3 id="動画の視聴">動画の視聴</h3>
+        <p>閲覧権限のある動画を視聴できます。</p>
+        <p><img src="/images/oatube_classic_videos_detail.jpg" alt="ビデオ画面" title="ビデオ画面" /></p>
+        <ul>
+          <li>視聴する動画を選択すると，ビデオ画面が表示されます</li>
+          <li>コントロールボタンで操作します
+            <ul>
+              <li><i class="fas fa-play"></i> 再生ボタン</li>
+              <li><i class="fas fa-step-backward"></i> 巻き戻しボタン（ビデオを最初まで巻き戻します）</li>
+              <li><i class="fas fa-pause"></i> 一時停止ボタン</li>
+              <li><i class="fas fa-expand-arrows-alt"></i> 全画面表示（[Esc] キーで修了します）</li>
+              <li><i class="fas fa-external-link-alt"></i> ポップアップ表示</li>
+            </ul>
+          </li>
+        </ul>
+        <h3 id="動画の登録">動画の登録</h3>
+        <p>あらかじめ作成した動画を登録（アップロード）し，配信します。</p>
+        <p><img src="/images/oatube_classic_videos_add.jpg" alt="ビデオ追加画面" title="ビデオ追加画面" /></p>
+        <ul>
+          <li>マイ動画画面で [ビデオ追加] ボタンをクリックします</li>
+          <li>動画に関する情報を入力します
+            <ul>
+              <li>タイトル</li>
+              <li>説明</li>
+              <li>タグ</li>
+              <li>クラス/グループ：どのクラス・グループに紐付けるかを設定します</li>
+              <li>公開範囲：クラス・グループを設定すると表示されます
+                <ul>
+                  <li>公開：URLを知る人全員が閲覧できます</li>
+                  <li>学内のみ公開：OATubeにログインした人全員が閲覧できます</li>
+                  <li>クラス（過年度を含む）：過年度も含めて，紐付けたクラスと同じ授業コードのクラスに登録されたユーザが閲覧できます</li>
+                  <li>クラス（本年度のみ）：紐付けたクラスに登録されたユーザが閲覧できます</li>
+                  <li>非公開：自分のみ閲覧できます</li>
+                </ul>
+              </li>
+              <li>カテゴリー</li>
+              <li>撮影日時</li>
+              <li>配信スケジュール：公開期間を制限する場合に，チェックをつけて設定します</li>
+            </ul>
+          </li>
+          <li>動画に関する情報はアップロード後にも修正できます</li>
+          <li>アップロードする動画ファイルを選択します
+            <ul>
+              <li>クリックすると，ファイルを選択するダイアログが表示されます</li>
+              <li>直接ファイルをドラッグ&amp;ドロップすることもできます</li>
+              <li>アップロードが完了すると [公開] ボタンが表示されます</li>
+            </ul>
+          </li>
+          <li>アップロード後，配信のための変換処理（エンコード）が終わると閲覧できるようになります</li>
+        </ul>
+        <h3 id="動画に関する情報の編集">動画に関する情報の編集</h3>
+        <ul>
+          <li>マイ動画画面またはビデオ画面で <i class="fas fa-pen"></i> 編集ボタンをクリックすると編集できます
+            <ul>
+              <li>アップロードした動画を削除する場合は <i class="fas fa-trash"></i> ゴミ箱ボタンをクリックします</li>
+            </ul>
+          </li>
+          <li><strong>ビデオ自体の編集はできません</strong></li>
+        </ul>
+        <h2 id="学習支援システムと組み合わせた利用例">学習支援システムと組み合わせた利用例</h2>
+        <p>現在，研究プロジェクトであるOATubeは全学ネットワークシステムと連携していません。このため，OATubeにログインできるようにするためには，OATubeアカウントの作成が必要となります
+          また，授業での利用を想定しているため，学生のOATubeアカウントの申請は教員からの一括申請のみ受け付けています。</p>
+        <p>このうえで，<a href="https://hoppii.hosei.ac.jp/portal">学習支援システム</a> と組み合わせて利用する方法として，大きく2つあります。</p>
+        <h3 id="全体に公開する場合">全体に公開する場合</h3>
+        <p>履修確定前など受講生の情報が揃わない，あるいは受講生が多い・不特定多数の学生に公開したいといった場合は，全体に公開する形で動画をアップロードすることをお勧めします。</p>
+        <ol>
+          <li>OATubeに動画を登録（アップロード）します
+            <ul>
+              <li>公開範囲を “公開” に設定します</li>
+            </ul>
+          </li>
+          <li>公開後の動画に対して，編集画面を表示します</li>
+          <li>“埋め込みコード” に表示されている文字列をコピーし，URL部分を取り出します
+            <ul>
+              <li>URL部分は src=”…” のダブルクオテーション内の文字列です</li>
+            </ul>
+          </li>
+          <li>URL部分を周知します
+            <ul>
+              <li>学習支援システムの “教材” 項目であれば，ウェブリンクを作成してURLを貼り付けます</li>
+            </ul>
+          </li>
+        </ol>
+        <p><img src="/images/oatube_classic_classic_videos_edit_embed.png" alt="動画編集画面 埋め込みコード" title="動画編集画面 埋め込みコード" /></p>
+        <h3 id="学生ユーザを作成する場合">学生ユーザを作成する場合</h3>
+        <p>受講生の情報が手元にあり，動画の公開範囲をそのクラスの受講生に限定する場合は，授業を受講している学生全員について下記情報のリストをご提供いただき，センターでOATubeアカウントを一括発行いたします。</p>
+        <ul>
+          <li>統合認証ID</li>
+          <li>名前</li>
+          <li>苗字</li>
+          <li>メールアドレス</li>
+        </ul>
+        <p>個人情報の受け渡しが発生するため個別の対応となりますので，担当までご相談ください。</p>
+        <h2 id="利用上の注意事項">利用上の注意事項</h2>
+        <ul>
+          <li>OATubeには動画を撮影・編集する機能はないため，別のシステムやアプリケーションを利用し，あらかじめ動画を作成する必要があります</li>
+          <li>OATubeアカウントはご自身で管理し，他の教職員・学生と共用しないようご注意ください</li>
+        </ul>
+        <h2 id="よくある質問">よくある質問</h2>
+        <h3 id="利用できるファイル形式サイズについて">利用できるファイル形式・サイズについて</h3>
+        <p>OATubeに登録できるビデオのファイル形式は以下の通りです。</p>
+        <ul>
+          <li>mp4</li>
+          <li>mpg, mpeg</li>
+          <li>wmv</li>
+          <li>mov</li>
+          <li>m2ts</li>
+          <li>avi</li>
+          <li>3gp, 3g2</li>
+        </ul>
+        <p>ファイルあたりのサイズの上限は500MBです。なお，音声のみのファイル（.mp3 等）については対応していません。</p>
+        <h3 id="アップロードした動画が閲覧できない">アップロードした動画が閲覧できない</h3>
+        <p>動画はサーバに登録（アップロード）されると，配信のための変換処理（エンコード）が行われます。エンコード処理中はサムネイルの代わりに “VIDEO UPLOADING” と表示されます。
+          少し時間をおいてから確認してください。なお，変換処理にかかる時間は，動画のファイルサイズや同時処理の数などにより所要時間は変わります。</p>
+        <h3 id="動画の公開範囲">動画の公開範囲</h3>
+        <p>閲覧者の状態と動画の公開範囲設定の関係は次の表の通りです。</p>
+        <table>
+          <thead>
+            <tr>
+              <th> </th>
+              <th>公開</th>
+              <th>学内のみ公開</th>
+              <th>クラス（過年度を含む）</th>
+              <th>クラス（本年度のみ）</th>
+              <th>非公開</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>動画をアップロードした本人</td>
+              <td>O</td>
+              <td>O</td>
+              <td>O</td>
+              <td>O</td>
+              <td>O</td>
+            </tr>
+            <tr>
+              <td>本年度のクラスに所属するユーザ</td>
+              <td>O</td>
+              <td>O</td>
+              <td>O</td>
+              <td>O</td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td>別年度で同じ授業コードのクラスに属するユーザ</td>
+              <td>O</td>
+              <td>O</td>
+              <td>O</td>
+              <td>X</td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td>OATubeのアカウントを持つユーザ</td>
+              <td>O</td>
+              <td>O</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <td>OATubeのアカウントを持たないユーザ</td>
+              <td>O</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>閲覧する権限のある動画は，OATubeの新着動画画面・クラス動画画面に表示されます。
+          なお，OATubeのアカウントを持たないユーザが”公開”の動画を閲覧できるのは，当該の動画のURLに直接アクセスした場合に限られます。</p>
+        <h2 id="お問い合わせ">お問い合わせ</h2>
+        <p>OATube内の左メニュー”問合せ”よりご連絡ください。</p>
+        <p>なお，OATubeは情報メディア教育研究センターの研究プロジェクトの一環であり，教員が運用しています。お含み置きくださいますようお願いいたします。</p>
+        <h2 id="参考サイト資料">参考サイト・資料</h2>
+        <ul>
+          <li><a href="https://oatube.media.hosei.ac.jp/">OATube</a></li>
+          <li><a href="http://fd-handbook.media.hosei.ac.jp/tool_main.html#OATube">教育支援ツール - 教員用 FD Handbook</a></li>
+        </ul>
+      </main>
+      <footer>
+        <div class="p-3 px-md-4 mt-3 border-top">
+          <div class="container">
+            <span class="float-right"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0"
+                        src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png" /></span>
+            <address class="small">
+              &copy; 2020. 法政大学 情報メディア教育研究センター.<br />
+              このコンテンツは <a rel="license"
+                        href="http://creativecommons.org/licenses/by-nc-sa/4.0/">クリエイティブ・コモンズライセンスの下に提供されています</a>。
+            </address>
+          </div>
+        </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+      <script>
+        $(function () {
+            $("main img").addClass("img-fluid");
+            $("main table").addClass("table table-bordered");
+        });
+      </script>
+    </body>
+  </html>
