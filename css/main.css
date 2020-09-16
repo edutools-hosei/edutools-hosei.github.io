@@ -59,6 +59,16 @@ main h3 {
     border-left: 4px solid #FF710A;
     margin-top: 1.5rem;
     margin-bottom: 0.6rem;
+    line-height: 1.1;
+}
+
+main h3 > span.badge {
+    font-size: 50%;
+    float: left;
+}
+
+main h3 > span.badge + span.badge {
+    margin-left: 0.2rem;
 }
 
 main h4 {
