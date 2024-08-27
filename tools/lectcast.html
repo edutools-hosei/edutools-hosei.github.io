@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="canonical" href="https://edutools-hosei.github.io/tools/lectcast.html" />
@@ -9,129 +10,173 @@
     <link rel="stylesheet" href="/css/main.css" />
     <script src="https://kit.fontawesome.com/9005b9eab5.js" crossorigin="anonymous"></script>
     <title>レクキャス | 教育支援ツールガイド@法政大学</title>
-  </head>
-  <body class="d-flex flex-column" style="min-height: 100vh;">
+</head>
+
+<body class="d-flex flex-column" style="min-height: 100vh;">
     <header>
-      <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom">
-        <a class="navbar-brand" href="/">
-          <img
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom">
+            <a class="navbar-brand" href="/">
+                <img
                     src="data:image/webp;base64,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" />
-          </a>
-          <h5 class="my-0 ml-2 mr-md-auto font-weight-normal">教育支援ツールガイド@法政大学</h5>
+            </a>
+            <h5 class="my-0 ml-2 mr-md-auto font-weight-normal">教育支援ツールガイド@法政大学</h5>
         </div>
-      </header>
-      <main class="container mb-auto">
+    </header>
+
+    <main class="container mb-auto">
         <h1 class="mb-0">レクキャス</h1>
-        <div class="mt-0 mb-4 text-right">最終更新：2022-04-26</div>
-        <p>レクキャスは，授業音声を配信するツールです。あらかじめ録音した音声をアップロードし，ブラウザ上で再生するほか，対応するPodcastプレイヤーで再生することができます。</p>
-        <div class="alert alert-info" role="alert">
-          <strong>レクキャスは2022年3月31日をもってサービスを終了いたしました</strong>
-        </div>
-        <ul>
-          <li><a href="https://www.hosei.ac.jp/media/info/article-20210715112537/">レクキャスのサービス終了について</a></li>
-        </ul>
-        <h2 id="レクキャスでできること">レクキャスでできること</h2>
-        <p>レクキャスは学習支援システムと連携して利用するツールです。連携すると，以下の操作が行えます。</p>
-        <ul>
-          <li>教員は音声ファイルをアップロードできます
-            <ul>
-              <li>mp3, m4a, wma の各ファイル形式に対応しています</li>
-            </ul>
-          </li>
-          <li>ブラウザ上で音声ファイルを再生できます</li>
-          <li>対応するPodcastアプリでチャンネルとして登録し，再生できます</li>
-        </ul>
-        <p>レクキャスには音声を録音する機能はありません。録音のためのアプリケーションやスマートフォンを利用し録音した音声ファイルをあらかじめ用意してください。</p>
-        <h2 id="利用の準備">利用の準備</h2>
-        <div class="alert alert-info" role="alert">
-          2021年度より，情報メディア教育研究センターが提供するツールは<strong>申請不要で利用できるようになりました</strong>。
-        </div>
-        <p>授業をご担当なさる先生が，学習支援システム上で設定いただくことでご利用いただけます。</p>
-        <h3 id="教員-学習支援システムでの設定"><span class="badge badge-primary">教員</span><br />
-           学習支援システムでの設定</h3>
-        <p>学習支援システムにログインし，OATubeを利用する授業内の左メニューより”授業情報”を選択し，”ツールを管理”タブを開きます。</p>
-        <p><img src="/images/ltitool_1.jpg" alt="授業内 授業情報" title="授業内 授業情報" /></p>
-        <p>プラグインツールのパネルに”レクキャス”の項目がありますので，選択して”続ける”をクリックします。</p>
-        <p><img src="/images/ltitool_2.jpg" alt="コースサイトツール" title="コースサイトツール" /></p>
-        <p>確認画面になりますので，”完了”をクリックします。</p>
-        <p><img src="/images/ltitool_3.jpg" alt="コースサイトツール 確認" title="コースサイトツール 確認" /></p>
-        <p>授業内の左メニューに追加されます。</p>
-        <p><img src="/images/ltitool_4.jpg" alt="授業内 項目が追加された状態" title="授業内 項目が追加された状態" /></p>
-        <p>授業管理者が一度設定すれば、学生や副担当教員などその授業に登録されている全ユーザが利用できるようになります。</p>
-        <h2 id="操作方法">操作方法</h2>
-        <p>スマートフォン・タブレット等でも操作できますが，ここではパソコンでの利用を想定して説明します。</p>
-        <h3 id="教員-学生-学習支援システムからレクキャスを起動する"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br />
-           学習支援システムからレクキャスを起動する</h3>
-        <p>レクキャスは学習支援システムと連携して動作します。</p>
-        <ol>
-          <li>学習支援システムにログインし、レクキャスを追加した科目を開きます</li>
-          <li>左のメニューの「レクキャス」をクリックします</li>
-          <li>レクキャスの起動が成功すると別のタブでトップページが表示されます</li>
-        </ol>
-        <p><img src="/images/lectcast_list.png" alt="レクキャスを起動する" title="レクキャスを起動する" /></p>
-        <h3 id="教員-学生-授業音声を再生する"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br />
-           授業音声を再生する</h3>
-        <p>レクキャスには，アップロードされた音声ファイルが新しい順に表示されます。コントローラの <i class="fas fa-play"></i> 再生ボタンをクリックすると，ブラウザ上で再生できます。</p>
-        <p><img src="/images/lectcast_list.png" alt="授業音声を再生する" title="授業音声を再生する" /></p>
-        <p>Podcast として利用する場合は，画面の指示に従ってURLやQRコードを用いて Podcast プレイヤーに登録します。</p>
-        <h3 id="教員-授業音声をアップロードする"><span class="badge badge-primary">教員</span><br />
-           授業音声をアップロードする</h3>
-        <p>音声ファイルは「授業」の単位で管理します。</p>
-        <ol>
-          <li>画面下部の「授業の新規作成」に必要項目を入力します
-            <ul>
-              <li>「教員用管理ツール」以下の項目は教員のみ表示されます</li>
-            </ul>
-          </li>
-          <li>入力後、「アップロード」をクリックします
-            <ul>
-              <li>アップロード後に画面がリロード（再読み込み）されます</li>
-            </ul>
-          </li>
-          <li>サーバ側での処理が終わると再生できるようになります
-            <ul>
-              <li>再生できない場合は画面をリロード（再読み込み）してください</li>
-              <li>ファイルサイズによりますが，サーバ側の処理には mp3, m4a の場合で5秒程度，wma の場合は10〜90秒程度の時間がかかることがあります</li>
-            </ul>
-          </li>
-        </ol>
-        <p><img src="/images/lectcast_upload.png" alt="授業を新規作成する" title="授業を新規作成する" /></p>
-        <h2 id="よくある質問">よくある質問</h2>
-        <h3 id="利用できるファイル形式サイズについて">利用できるファイル形式・サイズについて</h3>
-        <p>レクキャスにアップロードできる音声ファイルの形式は以下の通りです。</p>
-        <ul>
-          <li>mp3</li>
-          <li>m4a</li>
-          <li>wma</li>
-        </ul>
-      </main>
-      <footer>
+<div class="mt-0 mb-4 text-right">最終更新：2024-08-27</div>
+
+<p>レクキャスは，授業音声を配信するツールです。あらかじめ録音した音声をアップロードし，ブラウザ上で再生するほか，対応するPodcastプレイヤーで再生することができます。</p>
+
+<div class="alert alert-info" role="alert">
+<strong>レクキャスは2022年3月31日をもってサービスを終了いたしました</strong>
+</div>
+
+<ul>
+  <li><a href="https://www.hosei.ac.jp/media/info/article-20210715112537/">レクキャスのサービス終了について</a></li>
+</ul>
+
+<h2 id="レクキャスでできること">レクキャスでできること</h2>
+
+<p>レクキャスは学習支援システムと連携して利用するツールです。連携すると，以下の操作が行えます。</p>
+
+<ul>
+  <li>教員は音声ファイルをアップロードできます
+    <ul>
+      <li>mp3, m4a, wma の各ファイル形式に対応しています</li>
+    </ul>
+  </li>
+  <li>ブラウザ上で音声ファイルを再生できます</li>
+  <li>対応するPodcastアプリでチャンネルとして登録し，再生できます</li>
+</ul>
+
+<p>レクキャスには音声を録音する機能はありません。録音のためのアプリケーションやスマートフォンを利用し録音した音声ファイルをあらかじめ用意してください。</p>
+
+<h2 id="利用の準備">利用の準備</h2>
+
+<div class="alert alert-info" role="alert">
+2021年度より，情報メディア教育研究センターが提供するツールは<strong>申請不要で利用できるようになりました</strong>。
+</div>
+
+<p>授業をご担当なさる先生が，学習支援システム上で設定いただくことでご利用いただけます。</p>
+
+<h3 id="教員-学習支援システムでの設定"><span class="badge badge-primary">教員</span><br /> 学習支援システムでの設定</h3>
+
+<p>学習支援システムにログインし，OATubeを利用する授業内の左メニューより”授業情報”を選択し，”ツールを管理”タブを開きます。</p>
+
+<p><img src="/images/ltitool_1.jpg" alt="授業内 授業情報" title="授業内 授業情報" /></p>
+
+<p>プラグインツールのパネルに”レクキャス”の項目がありますので，選択して”続ける”をクリックします。</p>
+
+<p><img src="/images/ltitool_2.jpg" alt="コースサイトツール" title="コースサイトツール" /></p>
+
+<p>確認画面になりますので，”完了”をクリックします。</p>
+
+<p><img src="/images/ltitool_3.jpg" alt="コースサイトツール 確認" title="コースサイトツール 確認" /></p>
+
+<p>授業内の左メニューに追加されます。</p>
+
+<p><img src="/images/ltitool_4.jpg" alt="授業内 項目が追加された状態" title="授業内 項目が追加された状態" /></p>
+
+<p>授業管理者が一度設定すれば、学生や副担当教員などその授業に登録されている全ユーザが利用できるようになります。</p>
+
+<h2 id="操作方法">操作方法</h2>
+
+<p>スマートフォン・タブレット等でも操作できますが，ここではパソコンでの利用を想定して説明します。</p>
+
+<h3 id="教員-学生-学習支援システムからレクキャスを起動する"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br /> 学習支援システムからレクキャスを起動する</h3>
+
+<p>レクキャスは学習支援システムと連携して動作します。</p>
+
+<ol>
+  <li>学習支援システムにログインし、レクキャスを追加した科目を開きます</li>
+  <li>左のメニューの「レクキャス」をクリックします</li>
+  <li>レクキャスの起動が成功すると別のタブでトップページが表示されます</li>
+</ol>
+
+<p><img src="/images/lectcast_list.png" alt="レクキャスを起動する" title="レクキャスを起動する" /></p>
+
+<h3 id="教員-学生-授業音声を再生する"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br /> 授業音声を再生する</h3>
+
+<p>レクキャスには，アップロードされた音声ファイルが新しい順に表示されます。コントローラの <i class="fas fa-play"></i> 再生ボタンをクリックすると，ブラウザ上で再生できます。</p>
+
+<p><img src="/images/lectcast_list.png" alt="授業音声を再生する" title="授業音声を再生する" /></p>
+
+<p>Podcast として利用する場合は，画面の指示に従ってURLやQRコードを用いて Podcast プレイヤーに登録します。</p>
+
+<h3 id="教員-授業音声をアップロードする"><span class="badge badge-primary">教員</span><br /> 授業音声をアップロードする</h3>
+
+<p>音声ファイルは「授業」の単位で管理します。</p>
+
+<ol>
+  <li>画面下部の「授業の新規作成」に必要項目を入力します
+    <ul>
+      <li>「教員用管理ツール」以下の項目は教員のみ表示されます</li>
+    </ul>
+  </li>
+  <li>入力後、「アップロード」をクリックします
+    <ul>
+      <li>アップロード後に画面がリロード（再読み込み）されます</li>
+    </ul>
+  </li>
+  <li>サーバ側での処理が終わると再生できるようになります
+    <ul>
+      <li>再生できない場合は画面をリロード（再読み込み）してください</li>
+      <li>ファイルサイズによりますが，サーバ側の処理には mp3, m4a の場合で5秒程度，wma の場合は10〜90秒程度の時間がかかることがあります</li>
+    </ul>
+  </li>
+</ol>
+
+<p><img src="/images/lectcast_upload.png" alt="授業を新規作成する" title="授業を新規作成する" /></p>
+
+<h2 id="よくある質問">よくある質問</h2>
+
+<h3 id="利用できるファイル形式サイズについて">利用できるファイル形式・サイズについて</h3>
+
+<p>レクキャスにアップロードできる音声ファイルの形式は以下の通りです。</p>
+
+<ul>
+  <li>mp3</li>
+  <li>m4a</li>
+  <li>wma</li>
+</ul>
+
+    </main>
+
+    <footer>
         <div class="p-3 px-md-4 mt-3 border-top">
-          <div class="container">
-            <span class="float-right"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0"
+            <div class="container">
+                
+                <span class="float-right"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0"
                         src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png" /></span>
-            <address class="small">
-              &copy; 2022. 法政大学 情報メディア教育研究センター.<br />
-              このコンテンツは <a rel="license"
+                
+                <address class="small">
+                    &copy; 2024. 法政大学 情報メディア教育研究センター.<br />
+                    
+                    このコンテンツは <a rel="license"
                         href="http://creativecommons.org/licenses/by-nc-sa/4.0/">クリエイティブ・コモンズライセンスの下に提供されています</a>。
-            </address>
-          </div>
+                    
+                </address>
+            </div>
         </div>
-      </footer>
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-      <script>
+    <script>
         $(function () {
             $("main img").addClass("img-fluid");
             $("main table").addClass("table table-bordered");
         });
-      </script>
-    </body>
-  </html>
+    </script>
+</body>
+
+</html>

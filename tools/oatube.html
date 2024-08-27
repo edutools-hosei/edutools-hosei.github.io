@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="canonical" href="https://edutools-hosei.github.io/tools/oatube.html" />
@@ -9,483 +10,610 @@
     <link rel="stylesheet" href="/css/main.css" />
     <script src="https://kit.fontawesome.com/9005b9eab5.js" crossorigin="anonymous"></script>
     <title>OATube | 教育支援ツールガイド@法政大学</title>
-  </head>
-  <body class="d-flex flex-column" style="min-height: 100vh;">
+</head>
+
+<body class="d-flex flex-column" style="min-height: 100vh;">
     <header>
-      <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom">
-        <a class="navbar-brand" href="/">
-          <img
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom">
+            <a class="navbar-brand" href="/">
+                <img
                     src="data:image/webp;base64,UklGRgQHAABXRUJQVlA4TPgGAAAvxwANEK/CkJEkQTV3Iuf2ok82o+EgkiQpyv18YAH/LrADd6WgbRvJe4Acy2O/sokkSchPkVK18xnpC8ILFpCGArRggA2Mdz2hQwlABASIpTAjW0b9YoeKAIZCIDEhAQhAVp+ZOb4ne1xFrFFMqgb9YTB0CBCAdNby440mF0cNS4xr377/+8sYsl2ErIOyUpWUh4+TcgQuhBgECEAAsuFR3lNP7WWkCYiIcIgBgLZtOCXxdhMZWR6NV/feSuP/j6mDJasH4Ij+T4CvbdvqtrZt60OY4uDihkrkSI4tv7X9j+TKVXdJLfvqonrF///HSJbksklOHyL6PwHw7z/Y6/D0fP86+OPbk70G7//r3tsr8PTU8clegQ//dnw+vfxOHzs43tuvXrn3+K0Dfrdffigdu/+v6/9jv/5k49TpqRv8bC9ATF16+LcbPN69ACSydObuY3f2d3sBlsi+K4/furP/2Nhi6cYEQZipEOQ5GpEmLZu8sWWTq94m5zCXj8zSiYcv3fnPNjqI2zhTo7FWiY19J04QCoE3otjZ3Ckyhw6cnruRx/tJsA8XK4DwvVCJyjaiMvZiNVeDfzeLe/zWjc023rcCkm/6t4Lb3PdTMtzYd+ECJEFI4hCiYBlglnKCy2U9fOlGf7DJ/l2rFDQ1GH4BbMXbBdeC22a4vMxe85Ym/Cm+tCDLWtJOz93442lK4cGt4yyDjQjmDhqbjTKfP4h9c94bmrkxkZ3hfWlEbfy92AL98Vs38XebmrQvCyOv+9eCvO4XBgmGvKZkzRwG1pOv51FIzfwyJ6i19lNkZq8B8sOXbuonmwGonA0GQbDzgiH8Yngr3vqLmQ+js4V5fNLkPlnXlfF8JIE8PneTj3fTYo9wkSoRoigN9sIb5MXZK8F2cd4NNRq/nCmbNzNWQH/86aY/2pxvbkRImprGAMmLW6MQ2PilAGdj50jzlGh1VwF9+NIGP9vMxc3lrBXOothOqHpx1AIsrgfftb1d4Rb4eakN4QG9PWqjD3MBF7le52AbEa0R5bhC/WbU2GIv4J2zWRVaPDRAHp+02Q92wWLBG8F2cbYYEwyI4jYI/LhKtMByniDYBZs5MRdJoN/8aMN3cyXRGJSCYKwS0QbHuVbsobbRQZB2Yu9GaO45Ek1fKKAPH9r0k81diWQUgtogCooZSOqHUf4gWhcF1ffmGxIV0NtXbfx4mssdxMrYCAoDdqKZw7WC2sYWB8HK2Aqq70uiUeE1QB4ftcVsc5cCb0FQWT8KwjhXGRR7wWqMPwhuDIpW0LihsUEQbF7fSCCBfvOjLR5PM7lSUBuNaN0AtWhGZTD8Qf3SnUkCts6A3Ar24fvJ0WCsgD58aKtPNnMQ4C0KbtPwRhCGwl59lwRsBTn2YhZQOxv0rYCq+F6SebsK6O1RW767RDQaTd0MDV9vBG20awHJ2Kj/zs4XW/X9OZ0tZlE4V3gNkMeTtp3tAtGgmrQa0V4X1oidN3jbDjSC2tvodSsIk3Y2635OIIE8Pv5o6/fz1d4At67HvzVgJ9rrK2fQ6J2zflEP1cGmunU7bednqZEeK6DffGn7n+xHLBbZhmO28wEjepvTXRXnFoM2q8xIogL68KGX+PsP8VMOkeo1QG6PepFf7YVYIDGSQB5PevL77eWeb/t1Xa/u+e3bwNMLocnO7RSQx8cfzZ8v9/0Ic7vfzzl3F/BN7JXZWOVhb7Fqci6DEarc97HxBrHp+Sae8Y2/QBMtx0khTost0G++vp9vWzC9fpM+2gWDUq+RlTobkoaLDHXfJwWDpF5QOldfoo6mNKXA6aAB8nD67cDq+EL54/sQ0YCskOUMolZBSxucVFap2azMN/9vlsCmyk3OOVleVTFUOeOtiVn7JubCqJhosok4h8XfnTva92IjCgO3yEFhpka7escq6Ld2Y3j9D5p8UBDbeNjVucWUau3qgsqy0kSCzCwqcPHhzPOF9gyOShrMLmgwzbAznFJQqOSs1G+URqmgG/NKRlibkikZlVyp4k+NzHxowM0PQ79fqK1zzu04u1rnnGutgq7XOecwQzYY8Iq2r4IGPcloBYfyXKG03xgzF8gc5+Dq6djLdqFkQDMuYoBTCgo2eAHb5qUCahJVcj33Zp1v5M9QH7Q05jxDUYHDT73n7+WgMsBKFA1Lw6VemlIFaLQcFZV3FrRxVApKFpSMpNBrDIJ2BjcpHhpw+XTs4PfvJWq4tKTB1rudBsNQsVO/tlFOrMwd1C9IRitgZ0pWqwmpVDI4iXNw/LnjaJct1qEXs7Gsmpw30cCvc85XBbg3634R1oUBbrHOGSNikEOxLoxw5YwiAd7WwXALwFkOxpuYxLUzygqc/73j44Vezsfu8ZXwsbt7JTx+tVfi/eOLAA==" />
-          </a>
-          <h5 class="my-0 ml-2 mr-md-auto font-weight-normal">教育支援ツールガイド@法政大学</h5>
+            </a>
+            <h5 class="my-0 ml-2 mr-md-auto font-weight-normal">教育支援ツールガイド@法政大学</h5>
         </div>
-      </header>
-      <main class="container mb-auto">
+    </header>
+
+    <main class="container mb-auto">
         <h1 class="mb-0">OATube</h1>
-        <div class="mt-0 mb-4 text-right">最終更新：2022-02-18</div>
-        <p>OATube（オーエーチューブ）は，動画を用いた学習を支援するシステムです。あらかじめ撮影した映像をアップロードし，配信することができます。
-          現在運用しているバージョンでは学習支援システムと連携できるようになり、学習支援システムのツールの一つとして利用できるようになりました。</p>
-        <div class="alert alert-info" role="alert">
-          <strong>OATubeは2022年1月31日をもってサービスを終了いたしました</strong>
-        </div>
-        <ul>
-          <li><a href="https://www.hosei.ac.jp/media/info/article-20210916111153/">OATubeのサービス終了時期の変更について</a></li>
-          <li><a href="https://www.hosei.ac.jp/media/info/article-20210715105814/">OATubeのサービス終了について</a></li>
-        </ul>
-        <div class="alert alert-primary" role="alert">
-          従来より運用してきた，独自アカウントを用いる旧バージョンとは異なるシステムです。
-        </div>
-        <h2 id="oatubeでできること">OATubeでできること</h2>
-        <p>学習支援システムの授業管理者（担当教員）が連携設定をすると，以下の操作が行えます。</p>
-        <ul>
-          <li>学習支援システムの「授業」に対応した「クラス」が自動的に生成されます
-            <ul>
-              <li>授業に紐付いたユーザ（履修者・教員）が，OATube内のクラスに自動的に紐付きます</li>
-              <li>公開範囲を「クラス内公開」とすることで，授業の履修者・教員に限定して動画を公開できます</li>
-            </ul>
-          </li>
-          <li>動画ファイルを追加（アップロード）できます
-            <ul>
-              <li>設定を変更することで，学生がアップロードをすることもできます</li>
-              <li>専用スマートフォンアプリを利用すると，その場で撮影した動画をアップロードすることもできます</li>
-            </ul>
-          </li>
-          <li>動画を公開できます
-            <ul>
-              <li>公開範囲を設定できます</li>
-              <li>公開スケジュール（公開開始・公開終了）を設定できます</li>
-            </ul>
-          </li>
-          <li>動画を閲覧できます
-            <ul>
-              <li>ブラウザで再生できます</li>
-              <li>専用スマートフォンアプリでも再生できます</li>
-            </ul>
-          </li>
-          <li>動画にコメント・いいねを追加できます</li>
-        </ul>
-        <p>旧システムではOATube専用アカウントが必要でしたが，現行バージョンではアカウント作成が不要となりました。</p>
-        <p>なお，OATubeには，動画を撮影・編集する機能はありません。動画は別のシステムやアプリケーションを利用し，あらかじめご準備ください。
-          また，Web会議システムのようなライブ配信には対応していません。</p>
-        <h2 id="利用の準備">利用の準備</h2>
-        <div class="alert alert-info" role="alert">
-          2021年度より，情報メディア教育研究センターが提供するツールは<strong>申請不要で利用できるようになりました</strong>。
-        </div>
-        <p>授業をご担当なさる先生が，学習支援システム上で設定いただくことでご利用いただけます。</p>
-        <h3 id="教員-学習支援システムでの設定"><span class="badge badge-primary">教員</span><br />
-           学習支援システムでの設定</h3>
-        <p>学習支援システムにログインし，OATubeを利用する授業内の左メニューより”授業情報”を選択し，”ツールを管理”タブを開きます。</p>
-        <p><img src="/images/ltitool_1.jpg" alt="授業内 授業情報" title="授業内 授業情報" /></p>
-        <p>プラグインツールのパネルに”OATube”の項目がありますので，選択して”続ける”をクリックします。</p>
-        <p><img src="/images/ltitool_2.jpg" alt="コースサイトツール" title="コースサイトツール" /></p>
-        <p>確認画面になりますので，”完了”をクリックします。</p>
-        <p><img src="/images/ltitool_3.jpg" alt="コースサイトツール 確認" title="コースサイトツール 確認" /></p>
-        <p>授業内の左メニューに追加されます。</p>
-        <p><img src="/images/ltitool_4.jpg" alt="授業内 項目が追加された状態" title="授業内 項目が追加された状態" /></p>
-        <p>授業管理者が一度設定すれば、学生や副担当教員などその授業に登録されている全ユーザが利用できるようになります。</p>
-        <h2 id="oatubeにおける用語">OATubeにおける用語</h2>
-        <p>OATubeにおいて利用される用語を整理します。</p>
-        <ul>
-          <li>クラス
-            <ul>
-              <li>連携して利用する場合は，学習支援システムの「授業」に対応します</li>
-              <li>特別な場合を除き、法政大学における「授業科目」とも対応します</li>
-            </ul>
-          </li>
-          <li>教師
-            <ul>
-              <li>学習支援システムの「Instructor」に対応する権限です</li>
-              <li>学習支援システムの当該授業の担当教員は，対応するクラスの教師となります</li>
-            </ul>
-          </li>
-          <li>学生
-            <ul>
-              <li>学習支援システムの「Student」に対応する権限です</li>
-              <li>学習支援システムの当該授業に登録されている受講生は，対応するクラスに学生として登録されます</li>
-            </ul>
-          </li>
-        </ul>
-        <h2 id="ブラウザでの使い方">ブラウザでの使い方</h2>
-        <p>スマートフォン・タブレット等でも操作できますが，ここではパソコンでの利用を想定して説明します。</p>
-        <h3 id="教員-学生-oatubeの起動"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br />
-           OATubeの起動</h3>
-        <p>学習支援システムにログインし，OATubeを利用する設定がされている授業内の左メニューより起動します。</p>
-        <p><img src="/images/oatube_lms2020.jpg" alt="授業内 OATubeリンク" title="授業内 OATubeリンク" /></p>
-        <h3 id="教員-学生-新着動画とクラス動画"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br />
-           新着動画とクラス動画</h3>
-        <p>OATubeでは，最初に新着動画画面が表示されます。</p>
-        <p><img src="/images/oatube_home.jpg" alt="新着動画画面" title="新着動画画面" /></p>
-        <p>ログイン直後には新着動画画面が表示されます
-          新着動画画面には，公開された動画が新着順で最大25件表示されます。
-          また，下部にはログインしているユーザ自身の再生履歴が最大10件表示されます。</p>
-        <p>閲覧できる動画がない場合には，この画面には何も表示されません。</p>
-        <p><img src="/images/oatube_related_videos.jpg" alt="クラス動画画面" title="クラス動画画面" /></p>
-        <p>クラス動画画面には、ユーザが属しているクラスに公開されている全ての動画が表示されます。
-          学習支援システムと連携して利用する場合，OATubeの「クラス」は学習支援システムの「授業」に対応します。</p>
-        <h3 id="教員-学生-マイ動画"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br />
-           マイ動画</h3>
-        <p>学生のマイ動画には学生自身が投稿した動画，教師のマイ動画にはクラスに投稿された全動画が表示されます。
-          マイ動画に表示される動画は，動画情報を編集したり，削除したりすることができます。
-          学生の場合，マイ動画画面は学生自身が投稿した動画のみが表示されます。教師の場合は，マイ動画画面にはクラスに投稿された全動画が表示されます。</p>
-        <p><img src="/images/oatube_videos_list.jpg" alt="マイ動画画面" title="マイ動画画面" /></p>
-        <ul>
-          <li>視聴回数：視聴された回数を表示しています</li>
-          <li>コメント：動画へのコメント数を表示しています</li>
-          <li>いいね：動画へのいいね数を表示しています</li>
-          <li>編集：動画情報を編集します</li>
-          <li>削除：動画を削除します</li>
-          <li>動画追加：動画追加画面を表示します（動画のアップロードが許可されていない場合は表示されません）</li>
-        </ul>
-        <h3 id="教員-クラス設定"><span class="badge badge-primary">教員</span><br />
-           クラス設定</h3>
-        <p>クラス設定メニューは教師権限の場合のみ表示されます。クラス設定では，クラスにおける学生の動画アップロードの可否を設定します。</p>
-        <p><img src="/images/oatube_class_setting.jpg" alt="クラス設定画面" title="クラス設定画面" /></p>
-        <ul>
-          <li>スイッチを有効（青丸が右にある，色の濃い状態）にすると，学生がクラスに動画をアップロードできるようになります</li>
-        </ul>
-        <h3 id="教員-学生--動画の再生"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br />
-            動画の再生</h3>
-        <p>各画面から再生する動画を選択し，再生します。</p>
-        <p><img src="/images/oatube_play.jpg" alt="動画再生画面" title="動画再生画面" /></p>
-        <ul>
-          <li>動画再生画面の右側には、おすすめ動画が表示されています
-            <ul>
-              <li>おすすめ動画の右上にあるスイッチを有効（青丸が右にある，色の濃い状態）にすると，動画再生後に自動で次のおすすめ動画が再生されます</li>
-            </ul>
-          </li>
-          <li>コントロールボタンで操作します
-            <ul>
-              <li><i class="fas fa-play"></i> 再生ボタン</li>
-              <li><i class="fas fa-pause"></i> 一時停止ボタン</li>
-              <li><i class="fas fa-undo"></i> 10秒巻き戻しボタン</li>
-              <li><i class="fas fa-redo"></i> 10秒早送りボタン</li>
-              <li><i class="fas fa-expand-arrows-alt"></i> 全画面表示（[Esc] キーで終了します）</li>
-              <li><i class="fas fa-random"></i> 動画ポップアップ表示ボタン（ポップアップ画面下の × マークで終了します）</li>
-            </ul>
-          </li>
-        </ul>
-        <h3 id="教員-学生-動画の登録"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br />
-           動画の登録</h3>
-        <p>あらかじめ作成した動画を追加（アップロード）し，配信します。
-          クラスにおける学生の動画アップロードが許可されている場合に限り，学生も動画を追加できます。</p>
-        <p>マイ動画画面で [動画追加] ボタンをクリックします</p>
-        <p><img src="/images/oatube_videos_list.jpg" alt="マイ動画画面" title="マイ動画画面" /></p>
-        <p>動画追加画面が表示されますので，動画ファイルを選択します。
-          選択すると同時にファイルアップロードが始まります。サイズが大きいファイルでは時間がかかることがあります。</p>
-        <p><img src="/images/oatube_videos_upload_1.jpg" alt="動画アップロード" title="動画アップロード" /></p>
-        <p>動画処理が終わると，サムネイルを選択できるようになります。
-          サムネイルを選択し，動画に関する情報を入力します。</p>
-        <p><img src="/images/oatube_videos_upload_2.jpg" alt="動画アップロード完了" title="動画アップロード完了" /></p>
-        <ul>
-          <li>タイトル（必須）</li>
-          <li>説明</li>
-          <li>クラス（必須）：学習支援システムと対応するクラスが自動的に選択されています</li>
-          <li>カテゴリー（必須）</li>
-          <li>撮影日時</li>
-          <li>公開スケジュール：公開期間を制限する場合に，チェックをつけて設定します</li>
-          <li>公開範囲（必須）
-            <ul>
-              <li>公開：URLを知っていれば，OATubeにログインせずに誰でも閲覧できます</li>
-              <li>学内のみ公開：OATubeにログインした人全員が閲覧できます</li>
-              <li>クラス内公開：クラスに登録されたユーザのみが閲覧できます</li>
-              <li>非公開：自分のみ閲覧できます</li>
-            </ul>
-          </li>
-        </ul>
-        <p>設定後，[保存] ボタンをクリックします。
-          動画が公開されると、動画に設定されたクラスに登録されている学生にメールが送信されます。</p>
-        <p>なお，動画に関する情報はアップロード後でも修正できます。</p>
-        <h3 id="教員-学生-動画情報の編集"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br />
-           動画情報の編集</h3>
-        <ul>
-          <li>マイ動画画面または動画の再生画面で <i class="fas fa-pen"></i> 編集ボタンをクリックすると編集できます</li>
-          <li>アップロードした動画を削除する場合は，マイ動画画面で <i class="fas fa-trash"></i> ゴミ箱ボタンをクリックします</li>
-          <li><strong>動画ファイル自体の編集はできません</strong></li>
-        </ul>
-        <h2 id="アプリの使い方">アプリの使い方</h2>
-        <p>スマートフォン向けには，OATubeアプリが提供されています。</p>
-        <h3 id="教員-学生-oatubeアプリのインストール"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br />
-           OATubeアプリのインストール</h3>
-        <p>iOS版はApp Storeから、 Android版はGoogle Playから、アプリをインストールしてください。</p>
-        <ul>
-          <li><a href="https://apps.apple.com/us/app/id1528126216">iOS（AppStore）</a></li>
-          <li><a href="https://play.google.com/store/apps/details?id=com.oatube.service.app">Android（Google Playストア）</a></li>
-        </ul>
-        <div class="alert alert-primary" role="alert">
-          同じOATubeの名称で複数のアプリが表示されることがありますが、現行システムでは緑色のアイコンのアプリがお使いいただけます。
-        </div>
-        <p><img src="/images/oatube_appstore.jpg" alt="AppStoreの例" title="AppStoreの例" /></p>
-        <h3 id="教員-学生-oatubeアプリの起動"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br />
-           OATubeアプリの起動</h3>
-        <p>アプリをインストールした後，授業支援システムと連携することでログイン状態に設定されます。</p>
-        <p>スマートフォンのブラウザで学習支援システムにログインし，授業科目のコースからOATubeにアクセスします。</p>
-        <p><img src="/images/oatube_sp.jpg" alt="スマートフォンブラウザでアクセスしたOATubeの画面" title="スマートフォンブラウザでアクセスしたOATubeの画面" /></p>
-        <p>ブラウザ画面で表示されているOATube内のメニューから [プロフィール] をタップします、</p>
-        <p><img src="/images/oatube_sp_menu.jpg" alt="スマートフォンブラウザでアクセスしたOATubeのメニュー" title="スマートフォンブラウザでアクセスしたOATubeのメニュー" /></p>
-        <p>プロフィール画面右上に表示されている [OATubeアプリ連携] ボタンをタップします。</p>
-        <p><img src="/images/oatube_sp_profile.jpg" alt="スマートフォンブラウザでアクセスしたプロフィール画面" title="スマートフォンブラウザでアクセスしたプロフィール画面" /></p>
-        <p>アプリが起動し，ログインした状態となります。</p>
-        <p>OATubeアプリ連携を設定した場合，アプリではOATube内のクラスを横断して動画を閲覧できます。すなわち，アプリにはユーザが担当もしくは履修する授業科目における全ての動画が表示されます。</p>
-        <h3 id="教員-ホーム画面動画管理画面"><span class="badge badge-primary">教員</span><br />
-           ホーム画面・動画管理画面</h3>
-        <p>教員の場合，ホーム画面には担当するクラスごとに全ての動画が表示されます。</p>
-        <p><img src="/images/oatube_app_teacher.jpg" alt="OATubeアプリ ホーム画面（教員）" title="OATubeアプリ ホーム画面（教員）" /></p>
-        <ul>
-          <li>クラス名をタップするとリストが表示され，表示するクラスを変更できます
-            <ul>
-              <li>未視聴の動画があるクラスには，クラス名の左に赤丸数字で未視聴の動画数が表示されます</li>
-              <li>未視聴の動画には，動画タイトルの右に赤丸が表示されます</li>
-            </ul>
-          </li>
-          <li>画面下部の [動画管理] をタップすると，動画管理画面が表示されます</li>
-        </ul>
-        <h3 id="学生-ホーム画面お気に入り画面"><span class="badge badge-success">学生</span><br />
-           ホーム画面・お気に入り画面</h3>
-        <p>学生の場合，ホーム画面には履修するクラスごとに，閲覧できる全ての動画が表示されます。</p>
-        <p><img src="/images/oatube_app_student.jpg" alt="OATubeアプリ ホーム画面（学生）" title="OATubeアプリ ホーム画面（学生）" /></p>
-        <ul>
-          <li>クラス名をタップするとリストが表示され，表示するクラスを変更できます
-            <ul>
-              <li>未視聴の動画があるクラスには，クラス名の左に赤丸数字で未視聴の動画数が表示されます</li>
-              <li>未視聴の動画には，動画タイトルの右に赤丸が表示されます</li>
-            </ul>
-          </li>
-          <li>画面下部の [お気に入り] をタップすると，お気に入りに追加して動画の一覧が表示されます</li>
-        </ul>
-        <h3 id="教員-学生-履歴画面"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br />
-           履歴画面</h3>
-        <p>履歴画面には，全てのクラスを横断した再生履歴が表示されます。</p>
-        <p><img src="/images/oatube_app_history.jpg" alt="OATubeアプリ 履歴画面" title="OATubeアプリ 履歴画面" /></p>
-        <ul>
-          <li>画面上部のタブで履歴表示といいね表示を切り替えることができます</li>
-        </ul>
-        <h3 id="教員-学生-プロフィール画面設定画面"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br />
-           プロフィール画面・設定画面</h3>
-        <p>プロフィール画面には，自分がアップロードした動画（マイ動画）の一覧が表示されます。</p>
-        <p><img src="/images/oatube_app_profile.jpg" alt="OATubeアプリ プロフィール画面" title="OATubeアプリ プロフィール画面" /></p>
-        <p>プロフィール画面右上の歯車アイコンをタップすると，設定画面が表示されます。</p>
-        <p><img src="/images/oatube_app_settings.jpg" alt="OATubeアプリ 設定画面" title="OATubeアプリ 設定画面" /></p>
-        <ul>
-          <li>動画を自動再生
-            <ul>
-              <li>有効（色の付いた状態）にすると，動画再生後に自動で次のおすすめ動画が再生されます</li>
-            </ul>
-          </li>
-          <li>デフォルトの解像度
-            <ul>
-              <li>アプリで動画を再生する際の解像度のデフォルト値を設定できます</li>
-            </ul>
-          </li>
-          <li>言語
-            <ul>
-              <li>日本語と英語から選択できます</li>
-            </ul>
-          </li>
-          <li>ログアウト
-            <ul>
-              <li>アプリのログイン状態を解除できます</li>
-              <li>再度利用する際は，ブラウザで学習支援システムからOATubeを起動し「OATubeアプリ連携」より連携設定をしてください</li>
-            </ul>
-          </li>
-        </ul>
-        <h3 id="教員-学生-オプションメニュー"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br />
-           オプションメニュー</h3>
-        <p>動画タイトルの右に表示された縦三点のアイコンをタップすると，オプションメニューが表示されます。</p>
-        <p><img src="/images/oatube_app_menu.jpg" alt="OATubeアプリ オプションメニュー" title="OATubeアプリ オプションメニュー" /></p>
-        <ul>
-          <li>いいね
-            <ul>
-              <li>いいねに追加されます</li>
-            </ul>
-          </li>
-          <li>お気に入り
-            <ul>
-              <li>学生の場合のみ表示されます</li>
-              <li>お気に入りに追加されます</li>
-            </ul>
-          </li>
-          <li>編集
-            <ul>
-              <li>自分自身がアップロードした動画のみ表示されます</li>
-              <li>動画情報編集画面を表示します</li>
-            </ul>
-          </li>
-          <li>キャンセル
-            <ul>
-              <li>オプションメニューを閉じます</li>
-            </ul>
-          </li>
-        </ul>
-        <h3 id="教員-学生-動画の再生"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br />
-           動画の再生</h3>
-        <p>動画のサムネイルをタップすると，動画再生画面が表示されます。</p>
-        <p><img src="/images/oatube_app_video_detail.jpg" alt="OATubeアプリ 動画再生画面" title="OATubeアプリ 動画再生画面" /></p>
-        <p><img src="/images/oatube_app_player_start.jpg" alt="OATubeアプリ プレイヤー画面" title="OATubeアプリ プレイヤー画面" /></p>
-        <ul>
-          <li>画面内のコントロールボタンで操作します
-            <ul>
-              <li><i class="fas fa-play"></i> 再生ボタン</li>
-              <li><i class="fas fa-pause"></i> 一時停止ボタン</li>
-              <li><i class="fas fa-fast-backward"></i> 10秒巻き戻しボタン</li>
-              <li><i class="fas fa-fast-forward"></i> 10秒早送りボタン</li>
-              <li><i class="fas fa-expand"></i> 全画面表示</li>
-            </ul>
-          </li>
-          <li>動画右上で速度と解像度が調整できます</li>
-        </ul>
-        <p>動画再生画面の画面下にコメントを入力し， <i class="fas fa-paper-plane"></i> 投稿ボタンをタップするとコメントが投稿できます。投稿されたコメントは <i class="fas fa-comment-dots"></i> コメントボタンをタップすると確認できます。</p>
-        <p><img src="/images/oatube_app_comment_viewer.jpg" alt="OATubeアプリ コメント表示" title="OATubeアプリ コメント表示" /></p>
-        <h3 id="教員-学生-動画の検索"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br />
-           動画の検索</h3>
-        <p>画面上部の <i class="fas fa-search"></i> 検索ボタンをタップし，検索キーワードを入力すると動画のタイトルや説明からキーワードを含む動画の一覧が表示されます。</p>
-        <p><img src="/images/oatube_app_search.jpg" alt="OATubeアプリ 検索画面" title="OATubeアプリ 検索画面" /></p>
-        <p><i class="fas fa-filter"></i> フィルタボタンをタップすると，高度な検索画面が表示されます。キーワード以外に，カテゴリーや公開範囲を条件に追加して検索できます。</p>
-        <p><img src="/images/oatube_app_search_advanced.jpg" alt="OATubeアプリ 高度な検索画面" title="OATubeアプリ 高度な検索画面" /></p>
-        <h3 id="教員-学生-動画の登録-1"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br />
-           動画の登録</h3>
-        <p>アプリからは，スマートフォン内に保存されている動画のほか，カメラを起動し撮影してアップロードすることもできます。
-          クラスにおける学生の動画アップロードが許可されている場合に限り，学生も動画もアップロードできます。</p>
-        <p>動画をアップロードするには，画面下メニューの [アップロード] をタップします。</p>
-        <p><img src="/images/oatube_app_student.jpg" alt="OATubeアプリ ホーム画面" title="OATubeアプリ ホーム画面" /></p>
-        <p>動画アップロード画面の「ここをクリックして動画を選択してください」をタップし，アップロードする動画を選択します。</p>
-        <p><img src="/images/oatube_app_video_upload.jpg" alt="OATubeアプリ 動画アップロード画面" title="OATubeアプリ 動画アップロード画面" /></p>
-        <p>動画一覧で表示するサムネイルを選択し，タイトルなど必要情報を入力した上で，画面右上の [保存] をタップします。</p>
-        <p><img src="/images/oatube_app_video_detail.jpg" alt="OATubeアプリ アップロード動画詳細画面" title="OATubeアプリ アップロード動画詳細画面" /></p>
-        <ul>
-          <li>動画ファイル
-            <ul>
-              <li>アップロードする動画ファイルを選択します</li>
-            </ul>
-          </li>
-          <li>タイトル
-            <ul>
-              <li>動画のタイトルを入力します</li>
-            </ul>
-          </li>
-          <li>説明
-            <ul>
-              <li>動画の説明を入力します</li>
-            </ul>
-          </li>
-          <li>クラス
-            <ul>
-              <li>公開するクラスを選択します</li>
-            </ul>
-          </li>
-          <li>
-            <p>公開範囲</p>
-          </li>
-          <li>タイトル（必須）</li>
-          <li>説明</li>
-          <li>カテゴリー（必須）</li>
-          <li>クラス（必須）</li>
-          <li>公開範囲（必須）
-            <ul>
-              <li>公開：URLを知っていれば，OATubeにログインせずに誰でも閲覧できます</li>
-              <li>学内のみ公開：OATubeにログインした人全員が閲覧できます</li>
-              <li>クラス内公開：クラスに登録されたユーザのみが閲覧できます</li>
-              <li>非公開：自分のみ閲覧できます</li>
-            </ul>
-          </li>
-          <li>撮影日時</li>
-          <li>公開スケジュール：公開期間を制限する場合に，チェックをつけて設定します</li>
-        </ul>
-        <h3 id="教員-学生-動画情報の編集-1"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br />
-           動画情報の編集</h3>
-        <ul>
-          <li>動画のオプションメニューに表示される <i class="fas fa-pen"></i> 編集ボタンをタップすると編集できます</li>
-          <li>アップロードした動画を削除する場合は，<i class="fas fa-trash"></i> 削除ボタンをタップします</li>
-          <li><strong>動画ファイル自体の編集はできません</strong></li>
-        </ul>
-        <h2 id="よくある質問">よくある質問</h2>
-        <h3 id="利用できるファイル形式サイズについて">利用できるファイル形式・サイズについて</h3>
-        <p>OATubeに追加（アップロード）できる映像ファイルの形式は以下の通りです。</p>
-        <ul>
-          <li>mp4</li>
-          <li>mpg, mpeg</li>
-          <li>wmv</li>
-          <li>mov</li>
-          <li>m2ts</li>
-          <li>avi</li>
-        </ul>
-        <p>ファイルあたりの動画サイズの上限は500MBとしています。やむを得ず上限値を超えてしまう場合はご相談ください。
-          なお，音声のみのファイル（.mp3 等）については対応していませんので，音声配信ツール「<a href="/tools/lectcast">レクキャス</a>」の利用をご検討ください。</p>
-        <h3 id="動画の公開範囲">動画の公開範囲</h3>
-        <p>閲覧者の状態と動画の公開範囲設定の関係は次の表の通りです。</p>
-        <table>
-          <thead>
-            <tr>
-              <th> </th>
-              <th>公開</th>
-              <th>学内公開</th>
-              <th>クラス内公開</th>
-              <th>非公開</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>動画をアップロードした本人</td>
-              <td>O</td>
-              <td>O</td>
-              <td>O</td>
-              <td>O</td>
-            </tr>
-            <tr>
-              <td>「クラス」に所属するユーザ（教師・学生問わず）</td>
-              <td>O</td>
-              <td>O</td>
-              <td>O</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <td>OATubeのアカウントを持つユーザ（教師・学生問わず）</td>
-              <td>O</td>
-              <td>O</td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-            <tr>
-              <td>OATubeのアカウントを持たないユーザ（教師・学生問わず）</td>
-              <td>O</td>
-              <td>X</td>
-              <td>X</td>
-              <td>X</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>閲覧する権限のある動画は，OATubeの新着動画画面・クラス動画画面に表示されます。
-          なお，OATubeのアカウントを持たないユーザが”公開”の動画を閲覧できるのは，当該の動画のURLに直接アクセスした場合に限られます。</p>
-        <h2 id="お問い合わせ">お問い合わせ</h2>
-        <p><a href="https://media-hosei.atlassian.net/servicedesk/customer/portals">法政大学 情報メディア教育研究センター サポートデスク</a> よりお問い合わせください。</p>
-        <p>なお，OATubeは情報メディア教育研究センターの研究プロジェクトの一環であり，教員が運用しています。お含み置きくださいますようお願いいたします。</p>
-      </main>
-      <footer>
+<div class="mt-0 mb-4 text-right">最終更新：2022-02-18</div>
+
+<p>OATube（オーエーチューブ）は，動画を用いた学習を支援するシステムです。あらかじめ撮影した映像をアップロードし，配信することができます。
+現在運用しているバージョンでは学習支援システムと連携できるようになり、学習支援システムのツールの一つとして利用できるようになりました。</p>
+
+<div class="alert alert-info" role="alert">
+<strong>OATubeは2022年1月31日をもってサービスを終了いたしました</strong>
+</div>
+
+<ul>
+  <li><a href="https://www.hosei.ac.jp/media/info/article-20210916111153/">OATubeのサービス終了時期の変更について</a></li>
+  <li><a href="https://www.hosei.ac.jp/media/info/article-20210715105814/">OATubeのサービス終了について</a></li>
+</ul>
+
+<div class="alert alert-primary" role="alert">
+  従来より運用してきた，独自アカウントを用いる旧バージョンとは異なるシステムです。
+</div>
+
+<h2 id="oatubeでできること">OATubeでできること</h2>
+
+<p>学習支援システムの授業管理者（担当教員）が連携設定をすると，以下の操作が行えます。</p>
+
+<ul>
+  <li>学習支援システムの「授業」に対応した「クラス」が自動的に生成されます
+    <ul>
+      <li>授業に紐付いたユーザ（履修者・教員）が，OATube内のクラスに自動的に紐付きます</li>
+      <li>公開範囲を「クラス内公開」とすることで，授業の履修者・教員に限定して動画を公開できます</li>
+    </ul>
+  </li>
+  <li>動画ファイルを追加（アップロード）できます
+    <ul>
+      <li>設定を変更することで，学生がアップロードをすることもできます</li>
+      <li>専用スマートフォンアプリを利用すると，その場で撮影した動画をアップロードすることもできます</li>
+    </ul>
+  </li>
+  <li>動画を公開できます
+    <ul>
+      <li>公開範囲を設定できます</li>
+      <li>公開スケジュール（公開開始・公開終了）を設定できます</li>
+    </ul>
+  </li>
+  <li>動画を閲覧できます
+    <ul>
+      <li>ブラウザで再生できます</li>
+      <li>専用スマートフォンアプリでも再生できます</li>
+    </ul>
+  </li>
+  <li>動画にコメント・いいねを追加できます</li>
+</ul>
+
+<p>旧システムではOATube専用アカウントが必要でしたが，現行バージョンではアカウント作成が不要となりました。</p>
+
+<p>なお，OATubeには，動画を撮影・編集する機能はありません。動画は別のシステムやアプリケーションを利用し，あらかじめご準備ください。
+また，Web会議システムのようなライブ配信には対応していません。</p>
+
+<h2 id="利用の準備">利用の準備</h2>
+
+<div class="alert alert-info" role="alert">
+2021年度より，情報メディア教育研究センターが提供するツールは<strong>申請不要で利用できるようになりました</strong>。
+</div>
+
+<p>授業をご担当なさる先生が，学習支援システム上で設定いただくことでご利用いただけます。</p>
+
+<h3 id="教員-学習支援システムでの設定"><span class="badge badge-primary">教員</span><br /> 学習支援システムでの設定</h3>
+
+<p>学習支援システムにログインし，OATubeを利用する授業内の左メニューより”授業情報”を選択し，”ツールを管理”タブを開きます。</p>
+
+<p><img src="/images/ltitool_1.jpg" alt="授業内 授業情報" title="授業内 授業情報" /></p>
+
+<p>プラグインツールのパネルに”OATube”の項目がありますので，選択して”続ける”をクリックします。</p>
+
+<p><img src="/images/ltitool_2.jpg" alt="コースサイトツール" title="コースサイトツール" /></p>
+
+<p>確認画面になりますので，”完了”をクリックします。</p>
+
+<p><img src="/images/ltitool_3.jpg" alt="コースサイトツール 確認" title="コースサイトツール 確認" /></p>
+
+<p>授業内の左メニューに追加されます。</p>
+
+<p><img src="/images/ltitool_4.jpg" alt="授業内 項目が追加された状態" title="授業内 項目が追加された状態" /></p>
+
+<p>授業管理者が一度設定すれば、学生や副担当教員などその授業に登録されている全ユーザが利用できるようになります。</p>
+
+<h2 id="oatubeにおける用語">OATubeにおける用語</h2>
+
+<p>OATubeにおいて利用される用語を整理します。</p>
+
+<ul>
+  <li>クラス
+    <ul>
+      <li>連携して利用する場合は，学習支援システムの「授業」に対応します</li>
+      <li>特別な場合を除き、法政大学における「授業科目」とも対応します</li>
+    </ul>
+  </li>
+  <li>教師
+    <ul>
+      <li>学習支援システムの「Instructor」に対応する権限です</li>
+      <li>学習支援システムの当該授業の担当教員は，対応するクラスの教師となります</li>
+    </ul>
+  </li>
+  <li>学生
+    <ul>
+      <li>学習支援システムの「Student」に対応する権限です</li>
+      <li>学習支援システムの当該授業に登録されている受講生は，対応するクラスに学生として登録されます</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="ブラウザでの使い方">ブラウザでの使い方</h2>
+
+<p>スマートフォン・タブレット等でも操作できますが，ここではパソコンでの利用を想定して説明します。</p>
+
+<h3 id="教員-学生-oatubeの起動"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br /> OATubeの起動</h3>
+
+<p>学習支援システムにログインし，OATubeを利用する設定がされている授業内の左メニューより起動します。</p>
+
+<p><img src="/images/oatube_lms2020.jpg" alt="授業内 OATubeリンク" title="授業内 OATubeリンク" /></p>
+
+<h3 id="教員-学生-新着動画とクラス動画"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br /> 新着動画とクラス動画</h3>
+
+<p>OATubeでは，最初に新着動画画面が表示されます。</p>
+
+<p><img src="/images/oatube_home.jpg" alt="新着動画画面" title="新着動画画面" /></p>
+
+<p>ログイン直後には新着動画画面が表示されます
+新着動画画面には，公開された動画が新着順で最大25件表示されます。
+また，下部にはログインしているユーザ自身の再生履歴が最大10件表示されます。</p>
+
+<p>閲覧できる動画がない場合には，この画面には何も表示されません。</p>
+
+<p><img src="/images/oatube_related_videos.jpg" alt="クラス動画画面" title="クラス動画画面" /></p>
+
+<p>クラス動画画面には、ユーザが属しているクラスに公開されている全ての動画が表示されます。
+学習支援システムと連携して利用する場合，OATubeの「クラス」は学習支援システムの「授業」に対応します。</p>
+
+<h3 id="教員-学生-マイ動画"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br /> マイ動画</h3>
+
+<p>学生のマイ動画には学生自身が投稿した動画，教師のマイ動画にはクラスに投稿された全動画が表示されます。
+マイ動画に表示される動画は，動画情報を編集したり，削除したりすることができます。
+学生の場合，マイ動画画面は学生自身が投稿した動画のみが表示されます。教師の場合は，マイ動画画面にはクラスに投稿された全動画が表示されます。</p>
+
+<p><img src="/images/oatube_videos_list.jpg" alt="マイ動画画面" title="マイ動画画面" /></p>
+
+<ul>
+  <li>視聴回数：視聴された回数を表示しています</li>
+  <li>コメント：動画へのコメント数を表示しています</li>
+  <li>いいね：動画へのいいね数を表示しています</li>
+  <li>編集：動画情報を編集します</li>
+  <li>削除：動画を削除します</li>
+  <li>動画追加：動画追加画面を表示します（動画のアップロードが許可されていない場合は表示されません）</li>
+</ul>
+
+<h3 id="教員-クラス設定"><span class="badge badge-primary">教員</span><br /> クラス設定</h3>
+
+<p>クラス設定メニューは教師権限の場合のみ表示されます。クラス設定では，クラスにおける学生の動画アップロードの可否を設定します。</p>
+
+<p><img src="/images/oatube_class_setting.jpg" alt="クラス設定画面" title="クラス設定画面" /></p>
+
+<ul>
+  <li>スイッチを有効（青丸が右にある，色の濃い状態）にすると，学生がクラスに動画をアップロードできるようになります</li>
+</ul>
+
+<h3 id="教員-学生--動画の再生"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br />  動画の再生</h3>
+
+<p>各画面から再生する動画を選択し，再生します。</p>
+
+<p><img src="/images/oatube_play.jpg" alt="動画再生画面" title="動画再生画面" /></p>
+
+<ul>
+  <li>動画再生画面の右側には、おすすめ動画が表示されています
+    <ul>
+      <li>おすすめ動画の右上にあるスイッチを有効（青丸が右にある，色の濃い状態）にすると，動画再生後に自動で次のおすすめ動画が再生されます</li>
+    </ul>
+  </li>
+  <li>コントロールボタンで操作します
+    <ul>
+      <li><i class="fas fa-play"></i> 再生ボタン</li>
+      <li><i class="fas fa-pause"></i> 一時停止ボタン</li>
+      <li><i class="fas fa-undo"></i> 10秒巻き戻しボタン</li>
+      <li><i class="fas fa-redo"></i> 10秒早送りボタン</li>
+      <li><i class="fas fa-expand-arrows-alt"></i> 全画面表示（[Esc] キーで終了します）</li>
+      <li><i class="fas fa-random"></i> 動画ポップアップ表示ボタン（ポップアップ画面下の × マークで終了します）</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="教員-学生-動画の登録"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br /> 動画の登録</h3>
+
+<p>あらかじめ作成した動画を追加（アップロード）し，配信します。
+クラスにおける学生の動画アップロードが許可されている場合に限り，学生も動画を追加できます。</p>
+
+<p>マイ動画画面で [動画追加] ボタンをクリックします</p>
+
+<p><img src="/images/oatube_videos_list.jpg" alt="マイ動画画面" title="マイ動画画面" /></p>
+
+<p>動画追加画面が表示されますので，動画ファイルを選択します。
+選択すると同時にファイルアップロードが始まります。サイズが大きいファイルでは時間がかかることがあります。</p>
+
+<p><img src="/images/oatube_videos_upload_1.jpg" alt="動画アップロード" title="動画アップロード" /></p>
+
+<p>動画処理が終わると，サムネイルを選択できるようになります。
+サムネイルを選択し，動画に関する情報を入力します。</p>
+
+<p><img src="/images/oatube_videos_upload_2.jpg" alt="動画アップロード完了" title="動画アップロード完了" /></p>
+
+<ul>
+  <li>タイトル（必須）</li>
+  <li>説明</li>
+  <li>クラス（必須）：学習支援システムと対応するクラスが自動的に選択されています</li>
+  <li>カテゴリー（必須）</li>
+  <li>撮影日時</li>
+  <li>公開スケジュール：公開期間を制限する場合に，チェックをつけて設定します</li>
+  <li>公開範囲（必須）
+    <ul>
+      <li>公開：URLを知っていれば，OATubeにログインせずに誰でも閲覧できます</li>
+      <li>学内のみ公開：OATubeにログインした人全員が閲覧できます</li>
+      <li>クラス内公開：クラスに登録されたユーザのみが閲覧できます</li>
+      <li>非公開：自分のみ閲覧できます</li>
+    </ul>
+  </li>
+</ul>
+
+<p>設定後，[保存] ボタンをクリックします。
+動画が公開されると、動画に設定されたクラスに登録されている学生にメールが送信されます。</p>
+
+<p>なお，動画に関する情報はアップロード後でも修正できます。</p>
+
+<h3 id="教員-学生-動画情報の編集"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br /> 動画情報の編集</h3>
+
+<ul>
+  <li>マイ動画画面または動画の再生画面で <i class="fas fa-pen"></i> 編集ボタンをクリックすると編集できます</li>
+  <li>アップロードした動画を削除する場合は，マイ動画画面で <i class="fas fa-trash"></i> ゴミ箱ボタンをクリックします</li>
+  <li><strong>動画ファイル自体の編集はできません</strong></li>
+</ul>
+
+<h2 id="アプリの使い方">アプリの使い方</h2>
+
+<p>スマートフォン向けには，OATubeアプリが提供されています。</p>
+
+<h3 id="教員-学生-oatubeアプリのインストール"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br /> OATubeアプリのインストール</h3>
+
+<p>iOS版はApp Storeから、 Android版はGoogle Playから、アプリをインストールしてください。</p>
+
+<ul>
+  <li><a href="https://apps.apple.com/us/app/id1528126216">iOS（AppStore）</a></li>
+  <li><a href="https://play.google.com/store/apps/details?id=com.oatube.service.app">Android（Google Playストア）</a></li>
+</ul>
+
+<div class="alert alert-primary" role="alert">
+  同じOATubeの名称で複数のアプリが表示されることがありますが、現行システムでは緑色のアイコンのアプリがお使いいただけます。
+</div>
+
+<p><img src="/images/oatube_appstore.jpg" alt="AppStoreの例" title="AppStoreの例" /></p>
+
+<h3 id="教員-学生-oatubeアプリの起動"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br /> OATubeアプリの起動</h3>
+
+<p>アプリをインストールした後，授業支援システムと連携することでログイン状態に設定されます。</p>
+
+<p>スマートフォンのブラウザで学習支援システムにログインし，授業科目のコースからOATubeにアクセスします。</p>
+
+<p><img src="/images/oatube_sp.jpg" alt="スマートフォンブラウザでアクセスしたOATubeの画面" title="スマートフォンブラウザでアクセスしたOATubeの画面" /></p>
+
+<p>ブラウザ画面で表示されているOATube内のメニューから [プロフィール] をタップします、</p>
+
+<p><img src="/images/oatube_sp_menu.jpg" alt="スマートフォンブラウザでアクセスしたOATubeのメニュー" title="スマートフォンブラウザでアクセスしたOATubeのメニュー" /></p>
+
+<p>プロフィール画面右上に表示されている [OATubeアプリ連携] ボタンをタップします。</p>
+
+<p><img src="/images/oatube_sp_profile.jpg" alt="スマートフォンブラウザでアクセスしたプロフィール画面" title="スマートフォンブラウザでアクセスしたプロフィール画面" /></p>
+
+<p>アプリが起動し，ログインした状態となります。</p>
+
+<p>OATubeアプリ連携を設定した場合，アプリではOATube内のクラスを横断して動画を閲覧できます。すなわち，アプリにはユーザが担当もしくは履修する授業科目における全ての動画が表示されます。</p>
+
+<h3 id="教員-ホーム画面動画管理画面"><span class="badge badge-primary">教員</span><br /> ホーム画面・動画管理画面</h3>
+
+<p>教員の場合，ホーム画面には担当するクラスごとに全ての動画が表示されます。</p>
+
+<p><img src="/images/oatube_app_teacher.jpg" alt="OATubeアプリ ホーム画面（教員）" title="OATubeアプリ ホーム画面（教員）" /></p>
+
+<ul>
+  <li>クラス名をタップするとリストが表示され，表示するクラスを変更できます
+    <ul>
+      <li>未視聴の動画があるクラスには，クラス名の左に赤丸数字で未視聴の動画数が表示されます</li>
+      <li>未視聴の動画には，動画タイトルの右に赤丸が表示されます</li>
+    </ul>
+  </li>
+  <li>画面下部の [動画管理] をタップすると，動画管理画面が表示されます</li>
+</ul>
+
+<h3 id="学生-ホーム画面お気に入り画面"><span class="badge badge-success">学生</span><br /> ホーム画面・お気に入り画面</h3>
+
+<p>学生の場合，ホーム画面には履修するクラスごとに，閲覧できる全ての動画が表示されます。</p>
+
+<p><img src="/images/oatube_app_student.jpg" alt="OATubeアプリ ホーム画面（学生）" title="OATubeアプリ ホーム画面（学生）" /></p>
+
+<ul>
+  <li>クラス名をタップするとリストが表示され，表示するクラスを変更できます
+    <ul>
+      <li>未視聴の動画があるクラスには，クラス名の左に赤丸数字で未視聴の動画数が表示されます</li>
+      <li>未視聴の動画には，動画タイトルの右に赤丸が表示されます</li>
+    </ul>
+  </li>
+  <li>画面下部の [お気に入り] をタップすると，お気に入りに追加して動画の一覧が表示されます</li>
+</ul>
+
+<h3 id="教員-学生-履歴画面"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br /> 履歴画面</h3>
+
+<p>履歴画面には，全てのクラスを横断した再生履歴が表示されます。</p>
+
+<p><img src="/images/oatube_app_history.jpg" alt="OATubeアプリ 履歴画面" title="OATubeアプリ 履歴画面" /></p>
+
+<ul>
+  <li>画面上部のタブで履歴表示といいね表示を切り替えることができます</li>
+</ul>
+
+<h3 id="教員-学生-プロフィール画面設定画面"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br /> プロフィール画面・設定画面</h3>
+
+<p>プロフィール画面には，自分がアップロードした動画（マイ動画）の一覧が表示されます。</p>
+
+<p><img src="/images/oatube_app_profile.jpg" alt="OATubeアプリ プロフィール画面" title="OATubeアプリ プロフィール画面" /></p>
+
+<p>プロフィール画面右上の歯車アイコンをタップすると，設定画面が表示されます。</p>
+
+<p><img src="/images/oatube_app_settings.jpg" alt="OATubeアプリ 設定画面" title="OATubeアプリ 設定画面" /></p>
+
+<ul>
+  <li>動画を自動再生
+    <ul>
+      <li>有効（色の付いた状態）にすると，動画再生後に自動で次のおすすめ動画が再生されます</li>
+    </ul>
+  </li>
+  <li>デフォルトの解像度
+    <ul>
+      <li>アプリで動画を再生する際の解像度のデフォルト値を設定できます</li>
+    </ul>
+  </li>
+  <li>言語
+    <ul>
+      <li>日本語と英語から選択できます</li>
+    </ul>
+  </li>
+  <li>ログアウト
+    <ul>
+      <li>アプリのログイン状態を解除できます</li>
+      <li>再度利用する際は，ブラウザで学習支援システムからOATubeを起動し「OATubeアプリ連携」より連携設定をしてください</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="教員-学生-オプションメニュー"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br /> オプションメニュー</h3>
+
+<p>動画タイトルの右に表示された縦三点のアイコンをタップすると，オプションメニューが表示されます。</p>
+
+<p><img src="/images/oatube_app_menu.jpg" alt="OATubeアプリ オプションメニュー" title="OATubeアプリ オプションメニュー" /></p>
+
+<ul>
+  <li>いいね
+    <ul>
+      <li>いいねに追加されます</li>
+    </ul>
+  </li>
+  <li>お気に入り
+    <ul>
+      <li>学生の場合のみ表示されます</li>
+      <li>お気に入りに追加されます</li>
+    </ul>
+  </li>
+  <li>編集
+    <ul>
+      <li>自分自身がアップロードした動画のみ表示されます</li>
+      <li>動画情報編集画面を表示します</li>
+    </ul>
+  </li>
+  <li>キャンセル
+    <ul>
+      <li>オプションメニューを閉じます</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="教員-学生-動画の再生"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br /> 動画の再生</h3>
+
+<p>動画のサムネイルをタップすると，動画再生画面が表示されます。</p>
+
+<p><img src="/images/oatube_app_video_detail.jpg" alt="OATubeアプリ 動画再生画面" title="OATubeアプリ 動画再生画面" /></p>
+
+<p><img src="/images/oatube_app_player_start.jpg" alt="OATubeアプリ プレイヤー画面" title="OATubeアプリ プレイヤー画面" /></p>
+
+<ul>
+  <li>画面内のコントロールボタンで操作します
+    <ul>
+      <li><i class="fas fa-play"></i> 再生ボタン</li>
+      <li><i class="fas fa-pause"></i> 一時停止ボタン</li>
+      <li><i class="fas fa-fast-backward"></i> 10秒巻き戻しボタン</li>
+      <li><i class="fas fa-fast-forward"></i> 10秒早送りボタン</li>
+      <li><i class="fas fa-expand"></i> 全画面表示</li>
+    </ul>
+  </li>
+  <li>動画右上で速度と解像度が調整できます</li>
+</ul>
+
+<p>動画再生画面の画面下にコメントを入力し， <i class="fas fa-paper-plane"></i> 投稿ボタンをタップするとコメントが投稿できます。投稿されたコメントは <i class="fas fa-comment-dots"></i> コメントボタンをタップすると確認できます。</p>
+
+<p><img src="/images/oatube_app_comment_viewer.jpg" alt="OATubeアプリ コメント表示" title="OATubeアプリ コメント表示" /></p>
+
+<h3 id="教員-学生-動画の検索"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br /> 動画の検索</h3>
+
+<p>画面上部の <i class="fas fa-search"></i> 検索ボタンをタップし，検索キーワードを入力すると動画のタイトルや説明からキーワードを含む動画の一覧が表示されます。</p>
+
+<p><img src="/images/oatube_app_search.jpg" alt="OATubeアプリ 検索画面" title="OATubeアプリ 検索画面" /></p>
+
+<p><i class="fas fa-filter"></i> フィルタボタンをタップすると，高度な検索画面が表示されます。キーワード以外に，カテゴリーや公開範囲を条件に追加して検索できます。</p>
+
+<p><img src="/images/oatube_app_search_advanced.jpg" alt="OATubeアプリ 高度な検索画面" title="OATubeアプリ 高度な検索画面" /></p>
+
+<h3 id="教員-学生-動画の登録-1"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br /> 動画の登録</h3>
+
+<p>アプリからは，スマートフォン内に保存されている動画のほか，カメラを起動し撮影してアップロードすることもできます。
+クラスにおける学生の動画アップロードが許可されている場合に限り，学生も動画もアップロードできます。</p>
+
+<p>動画をアップロードするには，画面下メニューの [アップロード] をタップします。</p>
+
+<p><img src="/images/oatube_app_student.jpg" alt="OATubeアプリ ホーム画面" title="OATubeアプリ ホーム画面" /></p>
+
+<p>動画アップロード画面の「ここをクリックして動画を選択してください」をタップし，アップロードする動画を選択します。</p>
+
+<p><img src="/images/oatube_app_video_upload.jpg" alt="OATubeアプリ 動画アップロード画面" title="OATubeアプリ 動画アップロード画面" /></p>
+
+<p>動画一覧で表示するサムネイルを選択し，タイトルなど必要情報を入力した上で，画面右上の [保存] をタップします。</p>
+
+<p><img src="/images/oatube_app_video_detail.jpg" alt="OATubeアプリ アップロード動画詳細画面" title="OATubeアプリ アップロード動画詳細画面" /></p>
+
+<ul>
+  <li>動画ファイル
+    <ul>
+      <li>アップロードする動画ファイルを選択します</li>
+    </ul>
+  </li>
+  <li>タイトル
+    <ul>
+      <li>動画のタイトルを入力します</li>
+    </ul>
+  </li>
+  <li>説明
+    <ul>
+      <li>動画の説明を入力します</li>
+    </ul>
+  </li>
+  <li>クラス
+    <ul>
+      <li>公開するクラスを選択します</li>
+    </ul>
+  </li>
+  <li>
+    <p>公開範囲</p>
+  </li>
+  <li>タイトル（必須）</li>
+  <li>説明</li>
+  <li>カテゴリー（必須）</li>
+  <li>クラス（必須）</li>
+  <li>公開範囲（必須）
+    <ul>
+      <li>公開：URLを知っていれば，OATubeにログインせずに誰でも閲覧できます</li>
+      <li>学内のみ公開：OATubeにログインした人全員が閲覧できます</li>
+      <li>クラス内公開：クラスに登録されたユーザのみが閲覧できます</li>
+      <li>非公開：自分のみ閲覧できます</li>
+    </ul>
+  </li>
+  <li>撮影日時</li>
+  <li>公開スケジュール：公開期間を制限する場合に，チェックをつけて設定します</li>
+</ul>
+
+<h3 id="教員-学生-動画情報の編集-1"><span class="badge badge-primary">教員</span> <span class="badge badge-success">学生</span><br /> 動画情報の編集</h3>
+
+<ul>
+  <li>動画のオプションメニューに表示される <i class="fas fa-pen"></i> 編集ボタンをタップすると編集できます</li>
+  <li>アップロードした動画を削除する場合は，<i class="fas fa-trash"></i> 削除ボタンをタップします</li>
+  <li><strong>動画ファイル自体の編集はできません</strong></li>
+</ul>
+
+<h2 id="よくある質問">よくある質問</h2>
+
+<h3 id="利用できるファイル形式サイズについて">利用できるファイル形式・サイズについて</h3>
+
+<p>OATubeに追加（アップロード）できる映像ファイルの形式は以下の通りです。</p>
+
+<ul>
+  <li>mp4</li>
+  <li>mpg, mpeg</li>
+  <li>wmv</li>
+  <li>mov</li>
+  <li>m2ts</li>
+  <li>avi</li>
+</ul>
+
+<p>ファイルあたりの動画サイズの上限は500MBとしています。やむを得ず上限値を超えてしまう場合はご相談ください。
+なお，音声のみのファイル（.mp3 等）については対応していませんので，音声配信ツール「<a href="/tools/lectcast">レクキャス</a>」の利用をご検討ください。</p>
+
+<h3 id="動画の公開範囲">動画の公開範囲</h3>
+
+<p>閲覧者の状態と動画の公開範囲設定の関係は次の表の通りです。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>公開</th>
+      <th>学内公開</th>
+      <th>クラス内公開</th>
+      <th>非公開</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>動画をアップロードした本人</td>
+      <td>O</td>
+      <td>O</td>
+      <td>O</td>
+      <td>O</td>
+    </tr>
+    <tr>
+      <td>「クラス」に所属するユーザ（教師・学生問わず）</td>
+      <td>O</td>
+      <td>O</td>
+      <td>O</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>OATubeのアカウントを持つユーザ（教師・学生問わず）</td>
+      <td>O</td>
+      <td>O</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>OATubeのアカウントを持たないユーザ（教師・学生問わず）</td>
+      <td>O</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>閲覧する権限のある動画は，OATubeの新着動画画面・クラス動画画面に表示されます。
+なお，OATubeのアカウントを持たないユーザが”公開”の動画を閲覧できるのは，当該の動画のURLに直接アクセスした場合に限られます。</p>
+
+<h2 id="お問い合わせ">お問い合わせ</h2>
+
+<p><a href="https://media-hosei.atlassian.net/servicedesk/customer/portals">法政大学 情報メディア教育研究センター サポートデスク</a> よりお問い合わせください。</p>
+
+<p>なお，OATubeは情報メディア教育研究センターの研究プロジェクトの一環であり，教員が運用しています。お含み置きくださいますようお願いいたします。</p>
+
+    </main>
+
+    <footer>
         <div class="p-3 px-md-4 mt-3 border-top">
-          <div class="container">
-            <span class="float-right"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0"
+            <div class="container">
+                
+                <span class="float-right"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0"
                         src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png" /></span>
-            <address class="small">
-              &copy; 2022. 法政大学 情報メディア教育研究センター.<br />
-              このコンテンツは <a rel="license"
+                
+                <address class="small">
+                    &copy; 2022. 法政大学 情報メディア教育研究センター.<br />
+                    
+                    このコンテンツは <a rel="license"
                         href="http://creativecommons.org/licenses/by-nc-sa/4.0/">クリエイティブ・コモンズライセンスの下に提供されています</a>。
-            </address>
-          </div>
+                    
+                </address>
+            </div>
         </div>
-      </footer>
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-      <script>
+    <script>
         $(function () {
             $("main img").addClass("img-fluid");
             $("main table").addClass("table table-bordered");
         });
-      </script>
-    </body>
-  </html>
+    </script>
+</body>
+
+</html>
